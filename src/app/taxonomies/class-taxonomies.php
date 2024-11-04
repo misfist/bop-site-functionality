@@ -8,6 +8,9 @@
 namespace Site_Functionality\App\Taxonomies;
 
 use Site_Functionality\Common\Abstracts\Base;
+use Site_Functionality\App\Taxonomies\Author_Type;
+use Site_Functionality\App\Taxonomies\Role;
+use Site_Functionality\App\Taxonomies\Country;
 
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
@@ -24,6 +27,9 @@ class Taxonomies extends Base {
 	public function init(): void {
 		parent::init();
 
+		new Author_Type( $this->settings );
+		new Role( $this->settings );
+		new Country( $this->settings );
 	}
 
 }

@@ -28,9 +28,7 @@ class Custom_Fields extends Base {
 
 		add_action( 'acf/init', array( $this, 'acf_settings' ) );
 
-		new General( $this->settings );
 		new Page( $this->settings );
-		new Related_Posts( $this->settings );
 		new User( $this->settings );
 	}
 

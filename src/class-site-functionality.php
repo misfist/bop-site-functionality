@@ -105,8 +105,6 @@ class Site_Functionality {
 		$post_types    = new Post_Types( $this->settings );
 		$taxonomies    = new Taxonomies( $this->settings );
 		$custom_fields = new Custom_Fields( $this->settings );
-		$elastic_press = new ElasticPress( $this->settings );
-		$rest_api      = new Rest_API( $this->settings );
 		$users		 = new Users( $this->settings );
 	}
 
