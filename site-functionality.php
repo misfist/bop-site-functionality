@@ -7,13 +7,13 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              https://github.com/misfist/quincy-site-functionality
+ * @link              https://github.com/misfist/bop-site-functionality
  * @since             1.0.0
  * @package           site-functionality
  *
  * @wordpress-plugin
- * Plugin Name:       Site Functionality
- * Plugin URI:        https://github.com/misfist/quincy-site-functionality
+ * Plugin Name:       Site Functionality - Better Order Project
+ * Plugin URI:        https://github.com/misfist/bop-site-functionality
  * Description:       Adds custom functionality to project.
  * Version:           1.0.0
  * Requires PHP:      8.0
@@ -25,7 +25,7 @@
  * Text Domain:       site-functionality
  * Domain Path:       /languages
  *
- * GitHub Plugin URI: https://github.com/misfist/quincy-site-functionality
+ * GitHub Plugin URI: https://github.com/misfist/bop-site-functionality
  * Release Asset:     true
  */
 
