@@ -8,6 +8,7 @@
 namespace Site_Functionality\App\Post_Types;
 
 use Site_Functionality\Common\Abstracts\Base;
+use Site_Functionality\App\Post_Types\Author;
 
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
@@ -25,6 +26,8 @@ class Post_Types extends Base {
 		parent::init();
 
 		\add_filter( 'query_vars', array( $this, 'register_query_vars' ) );
+
+		$author = new Author( $this->settings );
 	}
 
 	
