@@ -45,6 +45,7 @@ class ComposerStaticInit5cfe5bfb91f94acd28462482e95655bf
         'Site_Functionality\\App\\Custom_Fields\\User' => __DIR__ . '/../..' . '/src/app/custom-fields/class-user.php',
         'Site_Functionality\\App\\Frontend\\Assets' => __DIR__ . '/../..' . '/src/app/frontend/class-assets.php',
         'Site_Functionality\\App\\Frontend\\Frontend' => __DIR__ . '/../..' . '/src/app/frontend/class-frontend.php',
+        'Site_Functionality\\App\\Post_Types\\Author' => __DIR__ . '/../..' . '/src/app/post-types/class-author.php',
         'Site_Functionality\\App\\Post_Types\\Post_Types' => __DIR__ . '/../..' . '/src/app/post-types/class-post-types.php',
         'Site_Functionality\\App\\Taxonomies\\Author_Type' => __DIR__ . '/../..' . '/src/app/taxonomies/class-author-type.php',
         'Site_Functionality\\App\\Taxonomies\\Country' => __DIR__ . '/../..' . '/src/app/taxonomies/class-country.php',

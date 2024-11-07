@@ -15,6 +15,7 @@ return array(
     'Site_Functionality\\App\\Custom_Fields\\User' => $baseDir . '/src/app/custom-fields/class-user.php',
     'Site_Functionality\\App\\Frontend\\Assets' => $baseDir . '/src/app/frontend/class-assets.php',
     'Site_Functionality\\App\\Frontend\\Frontend' => $baseDir . '/src/app/frontend/class-frontend.php',
+    'Site_Functionality\\App\\Post_Types\\Author' => $baseDir . '/src/app/post-types/class-author.php',
     'Site_Functionality\\App\\Post_Types\\Post_Types' => $baseDir . '/src/app/post-types/class-post-types.php',
     'Site_Functionality\\App\\Taxonomies\\Author_Type' => $baseDir . '/src/app/taxonomies/class-author-type.php',
     'Site_Functionality\\App\\Taxonomies\\Country' => $baseDir . '/src/app/taxonomies/class-country.php',
