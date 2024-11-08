@@ -65,6 +65,8 @@ class Author extends Base {
 		\add_action( 'acf/include_fields', array( $this, 'register_fields' ) );
 		\add_action( 'admin_menu', array( $this, 'remove_taxonomy_metaboxes' ), 100 );
 
+		\add_action( 'template_redirect', array( $this, 'disable_author_profile' ) );
+
 	}
 
 	/**
@@ -448,6 +450,24 @@ class Author extends Base {
 		}
 		remove_meta_box( 'categorydiv', self::POST_TYPE['id'], 'normal' );
 		// remove_meta_box( 'categorydiv','post','normal' );
+	}
+
+	/**
+	 * Disable author profile pages
+	 * 
+	 * @link https://developer.wordpress.org/reference/hooks/template_redirect/
+	 *
+	 * @return void
+	 */
+	public function disable_author_profile(): void {
+		global $wp_query;
+
+		if ( is_author() ) {
+			$wp_query->set_404();
+			status_header( 404 );
+			// Redirect to homepage
+			wp_redirect( home_url() );
+		}
 	}
 
 }
