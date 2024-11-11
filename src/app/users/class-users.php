@@ -40,7 +40,7 @@ class Users extends Base {
 	 * @return string
 	 */
 	public function hide_user_link( $link, $author_id, $author_nicename ): string {
-		if ( is_admin() || ! $author ) {
+		if ( is_admin() ) {
 			return $link;
 		}
 
